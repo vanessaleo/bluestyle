@@ -1,0 +1,21 @@
+{
+  "name": "bluestyle",
+  "version": "1.0.0",
+  "description": "database bluestyle",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bluestyle"
+  ],
+  "author": "vanessa leo",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.3",
+    "angular-ui-router": "^0.4.2",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1",
+    "ng-cookies": "^1.0.2"
+  }
+}
