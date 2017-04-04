@@ -8,7 +8,8 @@ angular.module('app').service('GestionaleSrv',function($http){
     return res.data;
   })
 }
+
 return{
-  getClienti: getClienti
+  getClienti: getClienti,
 }
 })
