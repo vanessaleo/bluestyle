@@ -15,12 +15,13 @@ app.controller('AppCtrl', function($scope, LoginSrv, $state,$rootScope) {
             if (toState.name == 'login' && LoginSrv.isAuthenticated() == true) {
                 $state.go('gestionale');
             }
-            if (toState.name != 'login' && LoginSrv.isAuthenticated() == false) {
-                $state.go('home');
-            }
+            // if (toState.name != 'login' && LoginSrv.isAuthenticated() == false) {
+            //     $state.go('home');
+            //
+            // }
             if(toState.name != 'login'){
         			$rootScope.authenticated = true;
-              
+
         		}
             else{
               $rootScope.authenticated = false;

@@ -24,7 +24,11 @@ $urlRouterProvider.otherwise('/home');
     templateUrl: 'client/nuovo/nuovo.template.html',
     controller: 'NuovoCtrl'
   })
-
+  .state('consulenza', {
+    url:'/consulenza',
+    templateUrl: 'client/consulenza/consulenza.template.html',
+    controller: 'ConsulenzaCtrl'
+  })
 
 
 });
