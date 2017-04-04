@@ -14,7 +14,7 @@ angular.module('app').controller('LoginCtrl',function($scope,LoginSrv,$rootScope
         LoginSrv.setCredentials(response.data);
         $rootScope.utente = response.data;
 				// localStorage.utente = angular.toJson(response.data);
-        $state.go('home');
+        $state.go('gestionale');
 
 			} else {
         alert('username o password errati')

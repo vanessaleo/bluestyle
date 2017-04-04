@@ -1,0 +1,33 @@
+<div>
+  <h1>Archivio</h1>
+<button class='btn btn-primary' ui-sref='nuovo'>Inserisci Cliente </button>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Cognome</th>
+            <th>Trattamento</th>
+            <th>Data</th>
+
+        </tr>
+    </thead>
+    <tbody>
+
+        <tr ng-repeat='cliente in clienti |filter:trova'>
+
+            <td>{{cliente.nome}}</td>
+            <td>{{cliente.cognome}}</td>
+
+            <td>{{cliente.trattamento}}</td>
+            <td>{{cliente.date | date: 'dd/MM/yyyy HH:mm'}}</td>
+            <td>
+               <a class="blue-text"><i class="fa fa-user"></i></a>
+                <a class="teal-text"><i class="fa fa-pencil"></i></a>
+                <a class="red-text"><i class="fa fa-times"></i></a>
+            </td>
+        </tr>
+
+    </tbody>
+</table>
+
+</div>
