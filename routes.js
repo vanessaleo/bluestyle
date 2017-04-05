@@ -29,6 +29,10 @@ $urlRouterProvider.otherwise('/home');
     templateUrl: 'client/consulenza/consulenza.template.html',
     controller: 'ConsulenzaCtrl'
   })
-
+  .state('gallery', {
+    url:'/gallery',
+    templateUrl: 'client/gallery/gallery.template.html',
+    controller: 'GalleryCtrl'
+  })
 
 });
