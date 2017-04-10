@@ -1,3 +1,50 @@
 .copertina {
   height: 500px;
 }
+.gallery{
+  width: 200px;
+}
+
+.staff{
+  margin: 50px auto;
+}
+.promozioni{
+  margin: 50px auto;
+}
+.trattamenti{
+  margin-top: 50px;
+}
+body{
+  background-color: #eee;
+}
+.discount{
+  text-decoration: line-through;
+}
+#cf {
+  position:relative;
+  height:281px;
+  width:450px;
+  margin:0 auto;
+}
+
+#cf img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  width: 100%;
+  height: 100%;
+
+
+}
+
+.card-wrapper{
+  width: 450px;
+
+}
+
+#cf img.top:hover {
+  opacity:0;
+}

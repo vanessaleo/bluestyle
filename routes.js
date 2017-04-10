@@ -34,5 +34,19 @@ $urlRouterProvider.otherwise('/home');
     templateUrl: 'client/gallery/gallery.template.html',
     controller: 'GalleryCtrl'
   })
-
+  .state('staff', {
+    url:'/staff',
+    templateUrl: 'client/staff/staff.template.html',
+    controller: 'StaffCtrl'
+  })
+  .state('trattamenti', {
+    url:'/trattamenti',
+    templateUrl: 'client/trattamenti/trattamenti.template.html',
+    controller: 'TrattamentiCtrl'
+  })
+  .state('novita', {
+    url:'/novita',
+    templateUrl: 'client/novita/novita.template.html',
+    controller: 'NovitaCtrl'
+  })
 });
