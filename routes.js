@@ -49,4 +49,9 @@ $urlRouterProvider.otherwise('/home');
     templateUrl: 'client/novita/novita.template.html',
     controller: 'NovitaCtrl'
   })
+  .state('prodotti', {
+    url:'/prodotti',
+    templateUrl: 'client/prodotti/prodotti.template.html',
+    controller: 'ProdottiCtrl'
+  })
 });

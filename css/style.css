@@ -48,3 +48,13 @@ body{
 #cf img.top:hover {
   opacity:0;
 }
+.menu{
+width:200px;
+height:100%;
+position:absolute;
+left:-200px;
+background:rgba(0,0,0,0.8);
+}
+.catalogo{
+  border-radius: 100%;
+}
