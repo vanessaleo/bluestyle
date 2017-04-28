@@ -1,134 +1,205 @@
 <div class='row'>
-<div class="col-md-6 list-group trattamenti">
-  <a class="list-group-item list-group-item-action flex-column align-items-start">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">Taglio</h5>
-      <small>BlueStyle</small>
-    </div>
-    <p class="mb-1">18,00 € / 20,00 €</p>
-    <button class='btn btn-primary'>Prenota</button>
-  </a>
-  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">Shampoo</h5>
-      <small class="text-muted">BlueStyle</small>
-    </div>
-    <p class="mb-1">5,00 €</p>
-    <button class='btn btn-primary'>Prenota</button>
-  </a>
-  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">Piega</h5>
-      <small class="text-muted">BlueStyle</small>
-    </div>
-    <p class="mb-1">22,00 € / 30,00 €</p>
-    <button class='btn btn-primary'>Vedi</button>
-  </a>
+    <div class="col-md-6 list-group trattamenti">
+        <a class="list-group-item list-group-item-action flex-column align-items-start" ng-click='getTaglio()'>
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Taglio</h5>
+                <small>BlueStyle</small>
+            </div>
+            <button class='btn btn-primary'>Vedi</button>
+        </a>
 
+        <a href="" class="list-group-item list-group-item-action flex-column align-items-start " ng-click='getPiega()'>
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Piega</h5>
+                <small class="text-muted">BlueStyle</small>
+            </div>
+            <button class='btn btn-primary'>Vedi</button>
+        </a>
 
-  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">Permanente</h5>
-      <small class="text-muted">BlueStyle</small>
+        <a href="" class="list-group-item list-group-item-action flex-column align-items-start" ng-click='getPermanente()'>
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Permanente e stiratura</h5>
+                <small class="text-muted">BlueStyle</small>
+            </div>
+            <button class='btn btn-primary'>Vedi</button>
+        </a>
+
+        <a href="" class="list-group-item list-group-item-action flex-column align-items-start" ng-click='getColore()'>
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Colore e decolorazione</h5>
+                <small class="text-muted">BlueStyle</small>
+            </div>
+            <button class='btn btn-primary'>Vedi</button>
+        </a>
+
+        <a class="list-group-item list-group-item-action flex-column align-items-start" ng-click='getMeches()'>
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Meches, Colpi di sole e altre novità</h5>
+                <small class="text-muted">BlueStyle</small>
+            </div>
+            <button class='btn btn-primary'>Vedi</button>
+        </a>
+
+        <a href="" class="list-group-item list-group-item-action flex-column align-items-start" ng-click='getRaccolti()'>
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Raccolto</h5>
+                <small class="text-muted">BlueStyle</small>
+            </div>
+            <button class='btn btn-primary'>Vedi</button>
+        </a>
+        <a href="" class="list-group-item list-group-item-action flex-column align-items-start" ng-click='getMakeup()'>
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Make-up e manicure</h5>
+                <small class="text-muted">BlueStyle</small>
+            </div>
+            <button class='btn btn-primary'>Vedi</button>
+        </a>
     </div>
-    <p class="mb-1">30,00 € / 40,00 €</p>
-    <button class='btn btn-primary'>Vedi</button>
-  </a>
-  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">Stirature chimica</h5>
-      <small class="text-muted">BlueStyle</small>
+
+    <!-- PIEGA -->
+    <div class='col-md-6' ng-show='piega'>
+        <br><br>
+        <div>
+            <h2><strong>Capelli lunghi</strong></h2>
+            <p class="">22,00 € / 30,00 €</p>
+            <img src='https://www.maguardaunpo.it/wp-content/uploads/2010/09/capelli-lunghi-2011-15.jpg' width='200px' height='200px' class='catalogo'>
+            <br>
+        </div>
+        <div>
+            <h2><strong>Capelli media lunghezza</strong></h2>
+            <p class="">20,00 € / 28,00 €</p>
+            <img src='http://paolinna.com/images5/1116/immagini-taglio-capelli-carr/immagini-taglio-capelli-carr-51_16.jpg' width='200px' height='200px' class='catalogo'>
+            <br>
+        </div>
+        <div>
+            <h2><strong>Capelli corti</strong></h2>
+            <p class="">15,00 € / 25,00 €</p>
+            <img src='https://www.beautydea.it/wp-content/uploads/2014/03/capelli-cortissimi-620-11.jpg' width='200px' height='200px' class='catalogo'>
+
+            <br>
+        </div>
+        <button class='btn btn-primary' href="tel:+390313355371">Prenota</button>
+
     </div>
-    <p class="mb-1">30,00 € / 50,00 €</p>
-    <button class='btn btn-primary'>Vedi</button>
-  </a>
-  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">Colore</h5>
-      <small class="text-muted">BlueStyle</small>
+    <!-- RACCOLTO -->
+    <div class='col-md-6' ng-show='raccolti'>
+        <br><br>
+        <div>
+            <h2><strong>Raccolto comunione o cresima</h2>
+            <p class="mb-1">20,00 €/100 €</p>
+            <img src='http://www.ideefesta.it/assets/images/comunione-cresima/accessori-capelli-prima-comunione.jpg' class='catalogo'>
+        </div>
+        <br><br>
+        <div>
+            <h2><strong>Raccolto sposa</h2>
+            <p class="mb-1">20,00 €/100 €</p>
+            <img src='http://static.pourfemme.it/pfmatrimonio/fotogallery/625X0/45783/raccolto-da-principessa-destate.jpg' class='catalogo'>
+        </div>
+        <br><br>
+        <div>
+            <h2><strong>Raccolto classico</h2>
+            <p class="mb-1">20,00 €/100 €</p>
+            <img src='http://www.cafeweb.it/wp-content/gallery/catalogo-acconciature-da-sposa-primavera-estate-2014/pettinature-da-sposa-2014-raccolto-morbido.jpg' class='catalogo'>
+        </div>
+        <button class='btn btn-primary' href="tel:+390313355371">Prenota</button>
+
     </div>
-    <p class="mb-1">28,00 € / 35,00 €</p>
-    <button class='btn btn-primary'>Vedi</button>
-  </a>
-  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">Decolorazione</h5>
-      <small class="text-muted">BlueStyle</small>
+
+    <!-- TAGLIO -->
+    <div class='col-md-6' ng-show='taglio'>
+        <br><br>
+        <div>
+            <h2><strong>Taglio uomo</strong></h2>
+            <img src='http://comefarcrescereicapelli.altervista.org/wp-content/uploads/2013/12/taglio-capelli-uomo-4.jpg' class='catalogo'>
+            <p class="mb-1">18,00 € / 20,00 €</p>
+        </div>
+        <div>
+            <h2><strong>Taglio scalato</strong></h2>
+            <img src='http://www.puroart.it/wp-content/uploads/2016/06/taglio-scalato-mosso.jpg' class='catalogo'>
+            <p class="mb-1">18,00 € / 20,00 €</p>
+        </div>
+        <div>
+            <h2><strong>Carrè</strong></h2>
+            <img src='http://s.plurielles.fr/mmdia/i/22/4/coupe-de-cheveu-carre-plongeant-jean-louis-david-2447224.jpg?v=1' class='catalogo'>
+            <p class="mb-1">18,00 € / 20,00 €</p>
+        </div>
+        <div>
+            <h2><strong>Spuntata</strong></h2>
+            <img src='http://www.beautydea.it/wp-content/uploads/2014/11/Acconciature-capelli-lunghi-inverno-2014-620-6.jpg' class='catalogo'>
+            <p class="mb-1">18,00 € / 20,00 €</p>
+            <button class='btn btn-primary' href="tel:+390313355371">Prenota</button>
+
+        </div>
     </div>
-    <p class="mb-1">20,00 € / 30,00 €</p>
-    <button class='btn btn-primary'>Vedi</button>
-  </a>
-  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">Riflessante</h5>
-      <small class="text-muted">BlueStyle</small>
+
+    <!-- MAKEUP E MANICURE -->
+    <div class='col-md-6' ng-show='makeup'>
+        <br><br>
+        <div>
+            <h2><strong>Make-up cerimonia</strong></h2>
+            <p class="mb-1">10,00 €/20,00 €</p>
+            <img src='http://centrovanity.it/files/Trucco-Sposa.jpg' class='catalogo'>
+        </div>
+        <div>
+            <h2><strong>Manicure base</strong></h2>
+            <p class="mb-1">10,00 €/20,00 €</p>
+            <img src='http://www.dibicentervenere.com/wp-content/uploads/2014/02/manicure-con-smalto.jpg' class='catalogo'>
+            <button class='btn btn-primary' href="tel:+390313355371">Prenota</button>
+        </div>
     </div>
-    <p class="mb-1">20,00 € / 30,00 €</p>
-    <button class='btn btn-primary'>Vedi</button>
-  </a>
-  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">Impacco</h5>
-      <small class="text-muted">BlueStyle</small>
-    </div>
-    <p class="mb-1">10,00 € / 15,00 €</p>
-    <button class='btn btn-primary'>Vedi</button>
-  </a>
-  <a class="list-group-item list-group-item-action flex-column align-items-start">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">Meches, Colpi di sole e altre <span ui-sref='novita' style='cursor:pointer'>novità<span></h5>
-      <small class="text-muted">BlueStyle</small>
-    </div>
-    <p class="mb-1">minimo 40,00 €</p>
-    <button class='btn btn-primary'>Vedi</button>
-  </a>
-  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">Manicure</h5>
-      <small class="text-muted">BlueStyle</small>
-    </div>
-    <p class="mb-1">10,00 €</p>
-    <button class='btn btn-primary'>Vedi</button>
-  </a>
-  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">Raccolto</h5>
-      <small class="text-muted">BlueStyle</small>
-    </div>
-    <p class="mb-1">20,00 €/100 €</p>
-    <button class='btn btn-primary'>Vedi</button>
-  </a>
-  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">Make-up</h5>
-      <small class="text-muted">BlueStyle</small>
-    </div>
-    <p class="mb-1">20,00 €</p>
-    <button class='btn btn-primary'>Vedi</button>
-  </a>
+    <!-- MECHES -->
+    <div class='col-md-6' ng-show='meches'>
+      <br><br>
+      <div>
+      <h2><strong>Meches</strong></h2>
+      <p class="mb-1">minimo 40,00 €</p>
+      <img src='http://paolinna.com/images/colore-capelli-con-meches/colore-capelli-con-meches-41-10.jpg' class='catalogo'>
+  </div>
+  <div>
+  <h2><strong>Riflessante</strong></h2>
+  <p class="mb-1">minimo 40,00 €</p>
+  <img src='https://consiglibeauty.garnier.it/wp-content/uploads/2015/06/riflessanti_capelli-e1435231123580.jpg' class='catalogo'>
 </div>
-
-
-<div class='col-md-6'>
+<div>
+<h2><strong>Speedy Sun</strong></h2>
+<p class="mb-1">minimo 40,00 €</p>
+<img src='http://www.joem.it/wp-content/uploads/2014/02/tecnica-colpi-di-sole-Joem11-.png' class='catalogo'>
+</div>
+  <button class='btn btn-primary' href="tel:+390313355371">Prenota</button>
+</div>
+<!-- COLORE -->
+<div class='col-md-6' ng-show='colore'>
   <br><br>
   <div>
-        <h2><strong>Capelli lunghi</strong></h2>
-      <p class="">22,00 € / 30,00 €</p>
-      <img src='https://www.maguardaunpo.it/wp-content/uploads/2010/09/capelli-lunghi-2011-15.jpg' width='200px' height='200px' class='catalogo'>
-  <br>
+    <h5 class="mb-1">Colore</h5>
+    <img src='http://www.cafeweb.it/wp-content/gallery/catalogo-capelli-colore-castano-2015/Taglio-capelli-caschetto-colore-cioccolato-2015.jpg' class='catalogo'>
+<p class="mb-1">28,00 € / 35,00 €</p>
+  </div>
+  <div>
+    <h5 class="mb-1">Hennè</h5>
+    <img src='http://static.pourfemme.it/625X0/bellezza/pourfemme/it/img/Capelli-henn%C3%A8.jpg' class='catalogo'>
+<p class="mb-1">28,00 € / 35,00 €</p>
+  </div>
+  <div>
+    <h5 class="mb-1">Decolorazione</h5>
+    <img src='http://blog.youcomb.com/wp-content/uploads/2015/05/Decolorazione-capelli-cos%E2%80%99%C3%A8-e-come-si-fa.jpg' class='catalogo'>
+<p class="mb-1">28,00 € / 35,00 €</p>
+<button class='btn btn-primary' href="tel:+390313355371">Prenota</button>
+  </div>
 </div>
-      <div>
-        <h2><strong>Capelli media lunghezza</strong></h2>
-        <p class="">20,00 € / 28,00 €</p>
-        <img src='http://paolinna.com/images5/1116/immagini-taglio-capelli-carr/immagini-taglio-capelli-carr-51_16.jpg'width='200px' height='200px'class='catalogo'>
-        <br>
-      </div>
-      <div>
-        <h2><strong>Capelli corti</strong></h2>
-        <p class="">15,00 € / 25,00 €</p>
-        <img src='https://www.beautydea.it/wp-content/uploads/2014/03/capelli-cortissimi-620-11.jpg'width='200px' height='200px' class='catalogo'>
-
-        <br>
-      </div>
+<!-- PERMAMENTE -->
+<div class='col-md-6' ng-show='permanente'>
+  <br><br>
+<div>
+<h2>Permanente</h2>
+<img src='http://www.miss-coiffure.com/IMG/jpg/permanente-3.jpg' class='catalogo'>
+<p class="mb-1">30,00 € / 50,00 €</p>
+</div>
+<div>
+<h2>Stiratura alla cheratina</h2>
+<img src='http://1.bp.blogspot.com/-iDV-Uo2IAb0/T1EY6yqGBqI/AAAAAAAAAQc/iAqSlKjScQs/s1600/5226629-creative-acconciatura-con-i-capelli-lisci-lunghi-femminile--close-up.jpg' class='catalogo'>
+<p class="mb-1">30,00 € / 50,00 €</p>
+</div>
+<button class='btn btn-primary' href="tel:+390313355371">Prenota</button>
 </div>
 </div>
